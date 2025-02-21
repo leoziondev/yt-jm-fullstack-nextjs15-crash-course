@@ -4,8 +4,9 @@
 
 - Next JS 15 Latest
 - Auth JS
+  - Github Provider
 - Shadcn UI
-- Tailwind
+- Tailwind v4
 
 ## Getting Started
 
