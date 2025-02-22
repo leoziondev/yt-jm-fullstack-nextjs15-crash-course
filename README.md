@@ -5,6 +5,7 @@
 - Next JS 15 Latest
 - Auth JS
   - Github Provider
+- Sanity
 - Shadcn UI
 - Tailwind v4
 
