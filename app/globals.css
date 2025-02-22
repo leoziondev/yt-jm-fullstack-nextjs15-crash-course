@@ -239,7 +239,7 @@
   }
 
   .search-input {
-    @apply flex-1 font-bold placeholder:font-semibold placeholder:text-slate-100 w-full h-auto outline-none;
+    @apply flex-1 font-bold placeholder:font-semibold placeholder:text-black/30 w-full h-auto outline-none;
   }
 
   .search-btn {
@@ -312,8 +312,6 @@
   .category-tag {
     @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full;
   }
-
-
 
   .tag-tri {
     @apply before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-black before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-black after:border-l-[10px] after:border-l-transparent;
