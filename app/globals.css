@@ -256,7 +256,7 @@
   }
 
   .startup-card_desc {
-    @apply font-normal text-[16px] line-clamp-2 my-3 text-slate-100 break-all;
+    @apply font-normal text-[16px] line-clamp-2 my-3 text-slate-600 break-all;
   }
 
   .startup-card_img {
@@ -264,7 +264,7 @@
   }
 
   .startup-card_btn {
-    @apply rounded-full bg-slate-200 font-medium text-[16px] text-white px-5 py-3;
+    @apply rounded-full bg-slate-900 font-medium text-[16px] text-white px-5 py-3;
   }
 
   .startup-card_skeleton {
