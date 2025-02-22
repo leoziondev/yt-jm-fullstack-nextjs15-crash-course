@@ -3,10 +3,13 @@ import {EyeIcon} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
+import {Author, Startup} from "@/sanity/types";
 
-const StartupCard = ({ post }) => {
+export type StartupTypeCard = Omit<Startup, "author"> & {author?: Author}
+
+const StartupCard = ({ post }: { post: StartupTypeCard }) => {
     const {
-        _createdAt,
+        _createAt,
         views,
         author: { _id: authorId, name },
         title,
@@ -19,7 +22,7 @@ const StartupCard = ({ post }) => {
         <li className="startup-card group">
             <div className="flex-between">
                 <p className="startup-card_date">
-                    {formatDate(_createdAt)}
+                    {formatDate(_createAt)}
                 </p>
                 <div className="flex gap-1 5">
                     <EyeIcon className="size-6 text-primary" />
@@ -44,7 +47,7 @@ const StartupCard = ({ post }) => {
                 <img src={image} alt="placeholder" className="startup-card_img" />
             </Link>
             <div className="flex-between gap-3 mt-5">
-                <Link href={`/?query/${category.toLowerCase()}`}>
+                <Link href={`/?query/${category?.toLowerCase()}`}>
                     <p className="text-16-medium">{category}</p>
                 </Link>
                 <Button className="startup-card_btn" asChild>
